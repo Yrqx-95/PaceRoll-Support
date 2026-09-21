@@ -1,0 +1,31 @@
+:root{color-scheme:light;--ink:#162431;--muted:#526575;--blue:#278bea;--line:#dce8ed;--paper:#fff;--bg:#f7fbfa;--warm:#fff7e8}
+*{box-sizing:border-box}
+html{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","PingFang SC","PingFang TC","Hiragino Kaku Gothic ProN",sans-serif;line-height:1.7;color:var(--ink);background:var(--bg);-webkit-text-size-adjust:100%}
+body{margin:0;min-width:280px}
+a{color:#0868ba;text-underline-offset:.2em}
+a:focus-visible{outline:3px solid var(--blue);outline-offset:4px;border-radius:4px}
+.wrap{width:min(100% - 40px,780px);margin:auto}
+header{border-bottom:1px solid var(--line);background:rgba(255,255,255,.88)}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:68px}
+.brand{font-weight:800;color:var(--ink);font-size:1.13rem;text-decoration:none;letter-spacing:-.03em}
+.brand i{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:9px;background:var(--blue);color:#fff;font-style:normal;margin-right:8px}
+.navlinks{display:flex;gap:18px;flex-wrap:wrap;font-size:.9rem}
+main{padding:clamp(36px,7vw,78px) 0 88px}
+.eyebrow{font-size:.77rem;letter-spacing:.13em;text-transform:uppercase;font-weight:750;color:#0872c7}
+h1{font-size:clamp(2rem,5vw,3.45rem);line-height:1.16;letter-spacing:-.055em;margin:.35em 0}
+h2{font-size:1.34rem;line-height:1.35;margin:2em 0 .5em;letter-spacing:-.025em}
+h3{font-size:1.04rem;margin:1.5em 0 .3em}
+p,li{max-width:68ch}
+.lede{font-size:1.14rem;color:var(--muted);max-width:53ch}
+.notice{border-left:4px solid #efb94c;background:var(--warm);padding:14px 18px;margin:24px 0;color:#63480d}
+.linklist{margin-top:42px;border-top:1px solid var(--line)}
+.linklist a{display:flex;justify-content:space-between;gap:14px;padding:23px 0;border-bottom:1px solid var(--line);font-weight:700;text-decoration:none;color:var(--ink)}
+.linklist a span:last-child{color:var(--blue)}
+.language-nav{display:flex;gap:10px;flex-wrap:wrap;margin:30px 0}
+.language-nav a{padding:7px 12px;border:1px solid var(--line);border-radius:99px;background:var(--paper);font-size:.84rem;text-decoration:none}
+.language-section{border-top:1px solid var(--line);padding-top:20px;margin-top:52px}
+.language-section h2:first-child{margin-top:0}
+.meta{font-size:.9rem;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:26px 0 42px;color:var(--muted);font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:560px){.nav{align-items:flex-start;flex-direction:column;padding:16px 0}.navlinks{gap:14px}main{padding-top:36px}}
